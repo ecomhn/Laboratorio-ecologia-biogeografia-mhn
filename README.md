@@ -55,3 +55,21 @@ La información actualizada del equipo se encuentra en:
 ├── styles.css            # Estilos CSS
 ├── main.js               # Scripts JS
 └── README.md             # Este archivo
+
+---
+
+## 📌 Cómo citar este repositorio (How to cite)
+
+Si utiliza este sitio web o materiales asociados en trabajos académicos,
+por favor cite el repositorio de la siguiente manera:
+
+**Español**
+> Laboratorio de Ecología y Biogeografía (MHN).  
+> Sitio web institucional del Laboratorio de Ecología y Biogeografía – UNMSM.  
+> GitHub repository. https://github.com/ecomhn/Laboratorio-ecologia-biogeografia-mhn
+
+**English**
+> Ecology and Biogeography Laboratory (MHN).  
+> Institutional website of the Ecology and Biogeography Laboratory – UNMSM.  
+> GitHub repository. https://github.com/ecomhn/Laboratorio-ecologia-biogeografia-mhn
+
