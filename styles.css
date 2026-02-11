@@ -130,7 +130,10 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvet
 
 /* Projects */
 .projects{display:grid;grid-template-columns:1fr;gap:1rem}
+.project-link{display:block;text-decoration:none;color:inherit;transition:transform 0.2s ease,box-shadow 0.2s ease}
+.project-link:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(47,133,90,0.15)}
 .project{border-left:4px solid var(--accent);padding:0.75rem;background:#fcfff8}
+.project-link:hover .project{background:#f7ffee}
 
 /* Contact form */
 .contact-form{max-width:600px;display:grid;gap:.5rem}
@@ -156,6 +159,10 @@ html,body{margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvet
 .subscribe-form{display:flex;gap:.5rem;margin-top:.5rem}
 .subscribe-form input{flex:1;padding:.5rem;border:1px solid #d1d5db;border-radius:4px}
 .subscribe-form button{background:var(--accent);color:#fff;border:0;padding:.5rem 1rem;border-radius:4px}
+
+/* Back link for detailed pages */
+.back-link{display:inline-block;margin-top:2rem;color:var(--accent);text-decoration:none;font-weight:500}
+.back-link:hover{text-decoration:underline}
 
 /* Small screens: make footer centered */
 @media (max-width:480px){

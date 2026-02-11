@@ -54,4 +54,32 @@ document.addEventListener('DOMContentLoaded', function(){
       contactForm.reset();
     });
   }
+
+  // Lazy-load images that use a lightweight SVG placeholder and have data-src
+  const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+  if('IntersectionObserver' in window && lazyImages.length){
+    const obs = new IntersectionObserver(function(entries, observer){
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          const img = entry.target;
+          const real = img.getAttribute('data-src');
+          if(real){
+            img.src = real;
+            img.removeAttribute('data-src');
+            img.classList.remove('lazy');
+          }
+          observer.unobserve(img);
+        }
+      });
+    },{rootMargin:'200px 0px'});
+
+    lazyImages.forEach(img=>obs.observe(img));
+  } else {
+    // Fallback: load all immediately
+    lazyImages.forEach(img=>{
+      const real = img.getAttribute('data-src');
+      if(real) img.src = real;
+      img.classList.remove('lazy');
+    });
+  }
 });
