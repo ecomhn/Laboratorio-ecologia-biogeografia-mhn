@@ -1,36 +1,57 @@
-# Laboratorio de Ecología y Biogeografía — Equipo Arana
+# Laboratorio de Ecología y Biogeografía (Arana’s Team)
 
-Sitio estático del laboratorio (scaffold básico).
+Repositorio oficial del **Laboratorio de Ecología y Biogeografía**  
+Departamento de Ecología – Museo de Historia Natural (MHN),  
+Universidad Nacional Mayor de San Marcos (UNMSM), Perú.
 
-## Estructura
-- `index.html`, `about.html`, `research.html`, `people.html`, `publications.html`, `contact.html` — páginas principales
-- `styles.css` — estilos
-- `main.js` — interacciones (menú, formulario demo)
-- `images/` — imágenes y placeholders
+Este repositorio contiene el código fuente y los materiales asociados
+al sitio web institucional del laboratorio.
 
-## Vista local
-Abre `index.html` en tu navegador (doble clic o arrastra al navegador). Para una vista más fiel a producción, sirve los archivos con un servidor local, por ejemplo:
+🌐 Sitio web:  
+https://ecomhn.github.io/Laboratorio-ecologia-biogeografia-mhn/
 
-Usando Python 3:
+---
 
-```bash
-python -m http.server 8000
-# luego abre http://localhost:8000
-```
+## 🧭 Líneas de investigación
 
-## Despliegue (GitHub Pages)
-1. Crea un repositorio en GitHub e inicializa localmente:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial lab site"
-   git remote add origin <url-del-repo>
-   git push -u origin main
-   ```
-2. Ve a Settings → Pages en GitHub y selecciona la rama `main` y la carpeta `/ (root)`.
-3. Guarda; GitHub Pages desplegará el sitio en `https://<tu-usuario>.github.io/<repo>`.
+El laboratorio desarrolla investigación en ecología y biogeografía,
+con énfasis en:
 
-## Notas y siguientes pasos
-- Reemplaza contenidos y fotos por los materiales reales del equipo.
-- Para recibir mensajes desde el formulario, configura un servicio como Formspree, Netlify Forms o un backend propio.
-- Puedo ayudarte a personalizar estilos, añadir perfiles de equipo automatizados o integrar un gestor de publicaciones.
+- Patrones espaciales de biodiversidad
+- Ecología de comunidades
+- Biogeografía y gradientes ambientales
+- Conservación de ecosistemas terrestres
+- Integración de datos de campo, laboratorio y teledetección
+- Ciencia abierta y reproducibilidad
+
+Los estudios se desarrollan principalmente en ecosistemas peruanos,
+incluyendo zonas áridas, andinas y amazónicas.
+
+---
+
+## 🧑‍🔬 Equipo
+
+El laboratorio está conformado por investigadores, tesistas de pregrado
+y posgrado, y colaboradores nacionales e internacionales.
+
+La información actualizada del equipo se encuentra en:  
+👉 https://ecomhn.github.io/Laboratorio-ecologia-biogeografia-mhn/people.html
+
+---
+
+## 🗂️ Contenido del repositorio
+
+```text
+├── index.html            # Página principal del sitio
+├── about.html            # Descripción del laboratorio
+├── research.html         # Líneas y proyectos de investigación
+├── people.html           # Equipo de trabajo
+├── publications.html     # Publicaciones
+├── contact.html          # Contacto y redes
+├── news*.html            # Noticias
+├── images/               # Imágenes del sitio
+├── audio/                # Material audiovisual (si aplica)
+├── profiles/             # Perfiles individuales
+├── styles.css            # Estilos CSS
+├── main.js               # Scripts JS
+└── README.md             # Este archivo
